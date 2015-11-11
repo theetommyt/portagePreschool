@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portage Preschool</title>
 <!--
@@ -9,48 +10,126 @@
    /////                    CSS                   /////
   ////////////////////////////////////////////////////
 -->
-  <!--                 STYLE.CSS               -->
-  <link rel="stylesheet" href="/styles/style.css" media="screen" title="no title" charset="utf-8">
 
-  <!--               NORMALIZE.CSS             -->
-  <link rel="stylesheet" href="/styles/normalize.css" media="screen" title="no title" charset="utf-8">
+<!--               NORMALIZE.CSS             -->
+  <link rel="stylesheet" href="styles/normalize.css" media="screen" title="no title" charset="utf-8">
+  <!--                 STYLE.CSS               -->
+  <link rel="stylesheet" href="styles/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="styles/style.css" media="screen" title="no title" charset="utf-8">
 
   </head>
+
+
   <body>
+
+  <!--                  FACEBOOK JS SDK                  -->
+  <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
 
   <!--                  HEADER                  -->
   <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img alt="Brand" src="images/schoolHouse.svg">
+          </a>
+        </div>
+        <p class="navbar-text">Portage Preschool</p>
 
-    <img src="" alt="Preschool Icon" />
-    <h3>Portage Preschool</h3>
-    <ul>
-      <li>Updates</li>
-      <li>About</li>
-      <li>Calendar</li>
-      <li>Class Info</li>
-      <li>Photos</li>
-      <li>Contact</li>
-    </ul>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Announcements</a></li>
+            <li><a href="#">Class Info</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Photos</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
   </header>
 
 
 
   <!--               BODY WRAPPER               -->
-  <div id="wrapper">
+  <main>
 
 
     <!--              JUMBOTRON                 -->
     <section id="jumbotron">
 
-      <img src="" alt="Preschool Logo" />
-      <h1>Portage Preschool</h1>
+      <h1 id="nameHeader">Portage Preschool</h1>
+      <img src="images/ppsLogo.png" alt="Preschool Logo" id="logo" />
+      <img src="images/star.svg" alt="star" id="star"/>
+      <h3>A caring and safe environment for learning</h3>
 
     </section>
 
 
     <!--            FACEBOOK FEED               -->
-    <section id="facebook">
+    <div id="facebook">
+
+      <article class="sectionWrap">
+          <div class="fb-page" data-href="https://www.facebook.com/portage.preschool" data-width="500" data-height="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/portage.preschool"><a href="https://www.facebook.com/portage.preschool">Portage Preschool</a></blockquote></div></div>
+      </article>
+
+    </div>
+
+
+    <!--              CLASS INFO                -->
+    <section id="classInfo">
+      <h1>Class Info</h1>
+      <div class="container">
+        <article class="info">
+          <h2>Important Dates</h2>
+          <h4>Start & End Dates</h4>
+          <p>2015-2016: September 1 to May 26</p>
+          <h4>Registration Dates</h4>
+          <p>February 2, 2015: 12:00pm-2:00pm and 5:30-7:00pm</p>
+          <p>February 9, 16, & 23, 2015: 5:00-7:00pm</p>
+          <p>February 6, 13, 20, & 27, 2015: 12:00pm-2:00pm</p>
+          <p><em>Registration Cost is $30 and non-refundable (This will buy your school supplies.)</em></p>
+          <p><strong>Please bring your child's birth certificate</strong></p>
+        </article>
+
+        <article class="info">
+          <h2>Days & Hours</h2>
+          <h4>3-4 Year Olds</h4>
+          <p><em>3-4 years old before August 1, 2015</em></p>
+          <p>Tuesday & Thursday Morning<br>
+            9:00am - 11:30am</p>
+          <h4>4-5 Year Olds</h4>
+          <p><em>4-5 years old before August 1, 2015</em></p>
+          <p>Monday, Wednesday & Friday Morning<br>
+              9:00am - 11:30am</p>
+        </article>
+
+        <article class="info">
+
+        </article>
+      </div>
+    </section>
+
+
+    <!--              CALENDAR                  -->
+    <section id="calendar">
 
       <article class="sectionWrap">
 
@@ -73,49 +152,13 @@
     </section>
 
 
-    <!--              CALENDAR                  -->
-    <section id="calendar">
-
-      <article class="sectionWrap">
-
-      </article>
-
-    </section>
-
-
-    <!--              CLASS INFO                -->
-    <section id="classInfo">
-
-        <article class="info">
-
-        </article>
-
-        <article class="info">
-
-        </article>
-
-        <article class="info">
-
-        </article>
-
-    </section>
-
-
     <!--              PHOTO ALBUM               -->
     <section id="photoAlbum">
 
     </section>
 
 
-    <!--              CONTACT                   -->
-    <section id="contact">
-
-
-    </section>
-
-
-
-  </div>
+  </main>
 
 
 
@@ -127,14 +170,14 @@
 
 <!--
     ////////////////////////////////////////////////////
-   /////                JavaScripts               /////
+   /////                JavaScript                /////
   ////////////////////////////////////////////////////
 -->
   <!--                  jQUERY                    -->
-  <script type="text/javascript" src="/javascripts/jquery.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.min.js"></script>
 
   <!--                  APP.JS                    -->
-  <script type="text/javascript" src="/javascripts/app.js"></script>
+  <script type="text/javascript" src="javascripts/app.js"></script>
 
   </body>
 </html>

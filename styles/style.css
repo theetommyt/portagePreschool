@@ -1,3 +1,55 @@
+body {
+  padding-top: 43px; }
 
+/* -----     jumbotron     ----- */
+#jumbotron {
+  width: 100%;
+  background-image: url("../images/redPaper.jpg");
+  margin: 0; }
+
+#nameHeader {
+  font-size: 8vw;
+  color: #ecf0f1;
+  padding: 60px 0;
+  margin-left: 5%; }
+
+#logo {
+  width: 85%;
+  margin-left: 10%; }
+
+#star {
+  width: 3%;
+  margin: 0 auto;
+  display: block;
+  padding: 50px 0 0 0; }
+
+#jumbotron h3 {
+  text-align: center;
+  color: #ecf0f1;
+  padding: 5px 0 60px 0;
+  font-size: 2vw; }
+
+/* -----     End jumbotron     ----- */
+#facebook {
+  background-image: url("../images/whitePaper.jpg");
+  margin-top: -11px;
+  height: 500px; }
+
+#classInfo {
+  background: linear-gradient(rgba(52, 152, 219, 0.6), rgba(52, 152, 219, 0.6)), url(../images/bluePaper.jpg);
+  margin-top: -11px;
+  color: #ecf0f1; }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.info {
+  color: #2c3e50;
+  margin: 40px 0;
+  padding: 10px 20px;
+  background-color: rgba(236, 240, 241, 0.75);
+  border-radius: 10px; }
 
 /*# sourceMappingURL=style.css.map */
