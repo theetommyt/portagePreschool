@@ -37,19 +37,33 @@ body {
 
 #classInfo {
   background: linear-gradient(rgba(52, 152, 219, 0.6), rgba(52, 152, 219, 0.6)), url(../images/bluePaper.jpg);
-  margin-top: -11px;
+  margin-top: -22px;
   color: #ecf0f1; }
+
+#classInfo h1 {
+  padding: 20px 0 0 20px; }
 
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  flex-wrap: wrap; }
 
 .info {
-  color: #2c3e50;
+  color: #3498db;
   margin: 40px 0;
   padding: 10px 20px;
-  background-color: rgba(236, 240, 241, 0.75);
-  border-radius: 10px; }
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  width: 32%; }
+
+.info img {
+  float: right;
+  margin: 10px 5px 5px 5px;
+  width: 50%; }
+
+.info h2 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(52, 152, 219, 0.5); }
 
 /*# sourceMappingURL=style.css.map */
