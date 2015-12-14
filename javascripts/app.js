@@ -1,14 +1,18 @@
 $(document).ready(function(){
 
-  $.ajaxSetup({ cache: true });
-    $.getScript('//connect.facebook.net/en_US/sdk.js', function(){
-      FB.init({
-        appId: '{your-app-id}',
-        version: 'v2.4' // or v2.0, v2.1, v2.2, v2.3
-      });
-      $('#loginbutton,#feedbutton').removeAttr('disabled');
-      FB.getLoginStatus(updateStatusCallback);
-    });
+
+  $('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top - 60
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
 
 
 
